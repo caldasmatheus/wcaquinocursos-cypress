@@ -1,0 +1,6 @@
+step 1: npm init -y
+
+step 2: npm install cypress@3.6.0
+*npm run open
+
+step 3: npx cypress open

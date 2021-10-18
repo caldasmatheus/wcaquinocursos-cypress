@@ -1,6 +1,6 @@
 it('nada agora', function ( ){ })
 
-function soma (a, b){
+const soma = function (a, b){
     return a + b;
 }
 

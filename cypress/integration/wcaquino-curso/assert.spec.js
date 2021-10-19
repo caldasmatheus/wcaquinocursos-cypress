@@ -82,13 +82,13 @@ it('String', ()=>{
 
 it('Numbers', ()=>{
     const number = 1
-    const floatNumber = 12.3
+    const floatNumber = 12.35
 
     expect(number).to.be.eql(1)
     expect(number).to.be.above(0) // Acime de...
     expect(number).to.be.below(2) // Abaixo de...
 
-    expect(floatNumber).to.be.eql(12.3)
+    expect(floatNumber).to.be.eql(12.35)
     expect(floatNumber).to.be.above(10) // Acime de...
     expect(floatNumber).to.be.below(12.4) // Abaixo de...
     expect(floatNumber).to.be.closeTo(12.3, 0.1)

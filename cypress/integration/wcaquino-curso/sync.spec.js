@@ -15,7 +15,7 @@ describe('Esperas...', () => {
         cy.get('#novoCampo').type('Testando')
     })
 
-    it.only('Uso do find', () => {
+    it('Uso do find', () => {
         cy.get('#buttonList').click()
 
         cy.get('#lista li')
@@ -24,6 +24,13 @@ describe('Esperas...', () => {
 
         cy.get('#lista li span')
             .should('contain', 'Item 2')
+    })
+
+    it.only('Uso do timeout', () => {
+        cy.get('#buttonListDOM').click()
+
+        cy.get('#lista li span', {timeout: 10000})
+            .should('have.length', 2)
     })
 
 })
